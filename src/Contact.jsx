@@ -7,33 +7,36 @@ function Contact() {
   const x = data.data.products;
 
   return (
-    <div className="w-full">
-      <div className="flex justify-around p-2 mx-2 my-1 bg-white">
-        <div className="w-1/4 p-2 text-sm tracking-wide text-left"> title </div>
+    <div className="w-full text-md bg-white">
+      <div className="flex justify-around p-2 mx-2 my-1 bg-blue-400  text-3xl text-blue-900">
+        <div className="w-1/4 p-2 border-2 rounded-md mx-2 text-center tracking-wide  ">
+          title
+        </div>
 
-        <div className="w-1/4 p-2 text-sm tracking-wide text-left">
+        <div className="w-1/4 p-2 border-2 rounded-md mx-2 text-center tracking-wide ">
           description
         </div>
-        <div className="w-1/4 p-2 text-sm tracking-wide text-left">brand</div>
-        <div className="w-1/4 p-2 text-sm tracking-wide text-left">
+        <div className="w-1/4 p-2 border-2 rounded-md mx-2 text-centertracking-wide ">
+          brand
+        </div>
+        <div className="w-1/4 p-2 border-2 rounded-md mx-2 text-center tracking-wide ">
           category
         </div>
       </div>
       {x &&
         x.map((item) => (
-          <div className="flex justify-around p-2 mx-2 my-1 ">
-            <div className="w-1/4 p-2 text-sm tracking-wide text-left">
-              {" "}
+          <div className="flex justify-around p-2 mx-2 my-1 text-green-900 ">
+            <div className="w-1/4 p-2 border-2 rounded-md mx-2 text-center tracking-wide ">
               {item.title}
             </div>
 
-            <div className="w-1/4 p-2 text-sm tracking-wide text-left">
+            <div className="w-1/4 p-2 border-2 rounded-md mx-2 text-center tracking-wide ">
               {item.description}
             </div>
-            <div className="w-1/4 p-2 text-sm tracking-wide text-left">
+            <div className="w-1/4 p-2  border-2 rounded-md mx-2 text-centertracking-wide ">
               {item.brand}
             </div>
-            <div className="w-1/4 p-2 text-sm tracking-wide text-left">
+            <div className="w-1/4 p-2  border-2 rounded-md mx-2 text-centertracking-wide ">
               {item.category}
             </div>
           </div>
